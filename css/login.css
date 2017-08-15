@@ -1,0 +1,33 @@
+.login {
+	max-width: 30%;
+	min-width: 30%;
+	background: white;#515a7b
+	text-align: center;
+	color: white;
+	margin-top: 17%;
+	padding: 2%;
+	border-radius: 0.7em;
+}
+
+.TextBox {
+	background: transparent;
+	font-family: Roboto;
+	color: #11a9ac;
+	border-radius: 0.5em;
+	font-size: 20px;
+	border-color: #11a9ac;
+	padding-left: 7px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.ComboBox {
+	background: transparent;
+	font-family: Roboto;
+	color: #11a9ac;
+	border-radius: 0.5em;
+	font-size: 20px;
+	border-color: #11a9ac;
+	padding-left: 7px;
+	box-sizing: border-box;
+}

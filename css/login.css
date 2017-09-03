@@ -1,33 +1,92 @@
+/*  */
 .login {
 	max-width: 30%;
 	min-width: 30%;
-	background: white;#515a7b
+	background: #515a7b;
 	text-align: center;
 	color: white;
-	margin-top: 17%;
+
+	margin-top: 15%;
 	padding: 2%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	border-radius: 0.7em;
 }
 
-.TextBox {
-	background: transparent;
-	font-family: Roboto;
-	color: #11a9ac;
-	border-radius: 0.5em;
-	font-size: 20px;
-	border-color: #11a9ac;
-	padding-left: 7px;
-	display: inline-block;
-	box-sizing: border-box;
+@media only screen and (max-width: 900px) {
+	.login {
+		max-width: 50%;
+		min-width: 50%;
+
+		margin-top: 30%;
+
+		padding-top: 7%;
+		padding-bottom: 7%;	
+	}
+	.content {
+		max-width: 100%;
+		min-width: 100%;
+	}
+
 }
 
-.ComboBox {
+@media only screen and (max-width: 500px) {
+	.login {
+		max-width: 90%;
+		min-width: 90%;
+
+		margin-top: 30%;
+	}
+}
+
+.login input[type="text"], input[type="password"], input[type="search"]{
+	max-width: 100%;
+	min-width: 70%;
 	background: transparent;
 	font-family: Roboto;
-	color: #11a9ac;
+	color: #f1f1f1;
+	font-size: 20px;
+	border-radius: 0.5em;
+
+	border: solid 2px #f1f1f1;
+	padding: 5% 9%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+}
+
+.login input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="search"]::placeholder{
+	color: #f1f1f1;
+	opacity: 0.5;
+}
+
+.login input[type="button"], input[type="reset"], input[type="submit"]{
+	background: #f1f1f1;
+	font-family: Roboto;
+	color: #515a7b;
+	font-size: 20px;
+	border-radius: 0.5em;
+
+	border: solid 2px #515a7b;
+	padding: 5% 9%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.login input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus{
+	border-radius: 1em;
+}
+.login select{
+	background: transparent;
+	font-family: Roboto;
+	color: #f1f1f1;
 	border-radius: 0.5em;
 	font-size: 20px;
-	border-color: #11a9ac;
+	border-color: #f1f1f1;
 	padding-left: 7px;
 	box-sizing: border-box;
 }

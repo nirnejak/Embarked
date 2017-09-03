@@ -9,8 +9,7 @@
 
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	
-	<script type="text/javascript" src="scripts/sha1.js"></script>
+
 
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script type="text/javascript" src="scripts/login.js"></script>
@@ -21,17 +20,10 @@
 
 </head>
 
-<body onload="checkLogin()">
+<body>
 <center>
 
-<script type="text/javascript">
-	function crypto(){
-		var password = document.getElementById("password").value;
-		password = CryptoJS.SHA1(password);
-		document.getElementById("password").value = password;
-		loginFunction();
-	}
-</script>
+
 <div class="content" id="content">
 
 <!-- load from here -->
@@ -40,8 +32,9 @@
 		<form action="#" method="post">
 			<input type="text" id="username" placeholder="Username" autofocus="autofocus"><br><br>
 			<input type="password" id="password" placeholder="Password"><br><br>
+			<input type="text" id="userType" placeholder="User Type"><br><br>
 			<input type="reset" value="Reset">
-			<input type="button" value="Login" onclick="crypto()">
+			<input type="button" value="Login" onclick="registerFunction()">
 		</form>
 	</div>
 	</div>

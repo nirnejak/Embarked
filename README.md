@@ -20,14 +20,16 @@ The applicatio will have 4 types of users.
 <li> Students
 </ol>
 
-Administrator : 
-	The administrator can add new users. He can create a new batch and add new students to it. He can generate a report of the attendance and he can Export the data in Excel(.xls) format.
-Faculty : 
-	This type of user can feed attendace in the system. They can check the attendace of the particular class or student. They can also export the date in the Excel format.
-Management : 
-	This type of user cannot make any changes in the database. They can check the attendace of the particular class or student. They can also export the date in the Excel format.
-Students : 
-	This type of user can check his attendance. Students can get some basic information and notices in his Dasboard.
+<dl>
+<dt>Administrator : </dt>
+	<dd>The administrator can add new users. He can create a new batch and add new students to it. He can generate a report of the attendance and he can Export the data in Excel(.xls) format.</dd>
+<dt>Faculty : </dt>
+	<dd>This type of user can feed attendace in the system. They can check the attendace of the particular class or student. They can also export the date in the Excel format.</dd>
+<dt>Management : </dt>
+	<dd>This type of user cannot make any changes in the database. They can check the attendace of the particular class or student. They can also export the date in the Excel format.</dd>
+<dt>Students : </dt>
+	<dd>This type of user can check his attendance. Students can get some basic information and notices in his Dasboard.</dd>
+</dl>
 
 <h2><center>Technology Stack</center></h2>
 

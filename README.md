@@ -51,8 +51,8 @@ We're not using any PHP framework.
 
 <h2><center>Features we're planning to add</center></h2>
 
-Live Dashboard
-Export the Report in Excel(.xls) format
+<li>Live Dashboard
+<li>Export the Report in Excel(.xls) format
 
 <h3><center>Note!</center></h3>
-not all of the features listed above implemented. we're still working on this project. So, please help by giving feedback and Commiting to this project.
+not all of the features listed above are implemented. we're still working on this project. So, please help by giving feedback and Commiting to this project.

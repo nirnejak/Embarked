@@ -13,27 +13,30 @@ Please Help us improve the application by giving suggestion and commiting to thi
 <h2><center>Basic Description</center></h2>
 
 The applicatio will have 4 types of users.
-1. Administrator
-2. Faculty
-3. Management
-4. Students
+<ol>
+<li> Administrator
+<li> Faculty
+<li> Management
+<li> Students
+</ol>
 
-
-1. Administrator : 
+Administrator : 
 	The administrator can add new users. He can create a new batch and add new students to it. He can generate a report of the attendance and he can Export the data in Excel(.xls) format.
-2. Faculty : 
+Faculty : 
 	This type of user can feed attendace in the system. They can check the attendace of the particular class or student. They can also export the date in the Excel format.
-3. Management : 
+Management : 
 	This type of user cannot make any changes in the database. They can check the attendace of the particular class or student. They can also export the date in the Excel format.
-4. Students : 
+Students : 
 	This type of user can check his attendance. Students can get some basic information and notices in his Dasboard.
 
 <h2><center>Technology Stack</center></h2>
 
-1. HTML, CSS, JavaScript
-2. Animate.css
-2. PHP7
-3. MySQL
+<ol>
+<li> HTML, CSS, JavaScript
+<li> Animate.css
+<li> PHP7
+<li> MySQL
+</ol>
 
 
 The front-end uses simple HTML, CSS and JavaScript. It uses animate.css for adding animation to the application.

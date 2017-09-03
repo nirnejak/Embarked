@@ -49,5 +49,5 @@ We're not using any PHP framework.
 Live Dashboard
 Export the Report in Excel(.xls) format
 
-<h3><center>Basic Description</center></h3>
+<h3><center>Note!</center></h3>
 not all of the features listed above implemented. we're still working on this project. So, please help by giving feedback and Commiting to this project.

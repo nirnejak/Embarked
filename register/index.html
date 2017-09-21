@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+<center>
+
+<div class="content" id="content">
+<!-- load from here -->
+	<script type="text/javascript">
+			function verify(){
+				empId=document.getElementById('EmployeeID').value;
+				FName=document.getElementById('FName').value;
+				LName=document.getElementById('LName').value;
+				userName=document.getElementById('userName').value;
+				password=document.getElementById('password').value;
+				ReType=document.getElementById('ReType').value;
+				abbr=document.getElementById('abbr').value;
+				userType=document.getElementById('userType').value;
+				contactNo=document.getElementById('contactNo').value;
+				email=document.getElementById('email').value;
+				dept=document.getElementById('dept').value;
+				field=document.getElementById('field').value;
+
+				if(password==ReType){
+					if (empId!="" &&	FName!="" &&	LName!="" &&	userName!="" && abbr!="" &&	userType!="" &&	contactNo!="" &&	email!="" &&	dept!="" && field!="" && password!=""){
+						var i=new XMLHttpRequest();
+						i.onreadystatechange = function(){
+							if(this.readyState == 4 && this.status == 200){
+								document.getElementById("content").innerHTML += this.responseText;
+							}
+						};
+						i.open("POST","register.php?employee_id="+empId+"&username="+userName+"&password="+password+"&first_name="+FName+"&last_name="+LName+"&phone_no="+contactNo+"&department="+dept+"&email="+email+"&abbriviation="+abbr+"&field_of_teaching="+field+"&user_type="+userType, true);
+						i.send();
+					}
+					else{
+						document.getElementById("form").innerHTML+="All Fields are Mandatory";
+					}
+				}
+				else{
+					document.getElementById("form").innerHTML+="Passwords do not match";
+				}
+		}
+	</script>
+
+	<script type="text/javascript">
+	function crypto(){
+		var password = document.getElementById("password").value;
+		if(password!="")
+			password = CryptoJS.SHA1(password);
+		document.getElementById("password").value = password;
+		//Some javascript function below to register
+		//verifyFunction();
+	}
+</script>
+
+	<div class='form animated bounce'>
+		
+		<form action='#' method='post'>
+			<span class="heading" style="display: block; background: #515a7b;">Enter Details</span><br><br>
+			<input type='text' placeholder='Employee ID' id="EmployeeID" autofocus='autofocus' style="max-width: 41%; min-width: 41%;">
+			<br><br>
+			<input type='text' placeholder='First Name' id="FName">
+			<input type='text' placeholder='Last Name' id="LName" style="margin-left: 9px;">
+			<br><br>
+			<input type='text' placeholder='Username' id="userName">
+			<input type='text' placeholder='Abbriviation' id="abbr" style="margin-left: 9px;">
+			<br><br>
+			<input type='password' placeholder='Password' id="password">
+			<input type='password' placeholder='Re-type Password' id="ReType" style="margin-left: 9px;">
+			<br><br>
+			<input type='text' placeholder='User Type eg. faculty' id="userType">
+			<input type='text' placeholder='Contact No' id="contactNo" style="margin-left: 9px;">
+			<br><br>
+			<input type='text' placeholder='Email' id="email" style="max-width: 41%; min-width: 41%;">
+			<br><br>
+			<input type='text' placeholder='Department' id="dept">
+			<input type='text' placeholder='Field of Teaching' id="field" style="margin-left: 9px;">
+			<br><br>
+			<input type='button' value='  REGISTER  ' onclick="verify()"><br><br>
+		</form>
+	</div>
+
+	
+
+<!-- to here -->
+</div>
+
+
+</center>
+<br>
+</body>
+</html>
+
+

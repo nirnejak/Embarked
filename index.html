@@ -6,16 +6,24 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
-
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/form.css">-->
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	
 	<script type="text/javascript" src="scripts/sha1.js"></script>
 
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
 	<script type="text/javascript" src="scripts/login.js"></script>
 	<script type="text/javascript" src="scripts/user.js"></script>
 
+	<script type="text/javascript" src="scripts/user_functions/hod.js"></script>
+	<script type="text/javascript" src="scripts/user_functions/faculty.js"></script>
+	<script type="text/javascript" src="scripts/user_functions/management.js"></script>
+	<script type="text/javascript" src="scripts/user_functions/student.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 
@@ -27,26 +35,26 @@
 <script type="text/javascript">
 	function crypto(){
 		var password = document.getElementById("password").value;
-		password = CryptoJS.SHA1(password);
+		if(password!="")
+			password = CryptoJS.SHA1(password);
 		document.getElementById("password").value = password;
 		loginFunction();
 	}
 </script>
-<div class="content" id="content">
 
+<div class="content animated fadeIn" id="content">
 <!-- load from here -->
-	<div  class="animated bounce">
-	<div class="login">
-		<form action="#" method="post">
-			<input type="text" id="username" placeholder="Username" autofocus="autofocus"><br><br>
-			<input type="password" id="password" placeholder="Password"><br><br>
-			<input type="reset" value="Reset">
-			<input type="button" value="Login" onclick="crypto()">
+
+	<div class='login animated bounce'>
+		<form action='#' method='post'>
+			<input type='text' id='username' placeholder='Username' autofocus='autofocus'><br><br>
+			<input type='password' id='password' placeholder='Password'><br><br>
+			<input type='reset' value='CLEAR'>&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='button' value='LOGIN' onclick='crypto()'>
 		</form>
 	</div>
-	</div>
-<!-- to here -->
 
+<!-- to here -->
 </div>
 
 

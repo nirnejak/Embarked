@@ -1,4 +1,4 @@
-<!-- Body of Faculty -->
+<!-- Body of HOD -->
 
 <div class="header animated slideInDown">
 	<div class="navigation animated fadeIn">
@@ -10,7 +10,7 @@
 		
 			include("../db/connection.php");
 			$employee_id=$SESSION['employee_id'];
-			$rcv=mysqli_query($conn,"SELECT first_name,last_name from faculty where(employee_id='$employee_id');");
+			$rcv=mysqli_query($conn,"SELECT first_name,last_name from hod where(employee_id='$employee_id');");
 			$rcv_user=mysqli_fetch_array($rcv);
 			$FName=$rcv_user['first_name'];
 			$LName=$rcv_user['last_name'];
@@ -28,6 +28,9 @@
 	<div class="page_card">
    		<a href="#" style="border-top-left-radius: 0.4em;border-top-right-radius: 0.4em; background: #11a9ac;">MENU</a>
    		<a href="#" onclick="dashboard()">Dashboard</a>
+		<a href="#" onclick="addBatch.showForm()">Add Batch</a>
+		<a href="#" onclick="addDelStudent()">Add/Delete Student</a>
+		<a href="#" onclick="startAttendance()">Start Attendance</a>
    		<a href="#" onclick="feedAttendance()">Feed Attendance</a>
    		<a href="#" onclick="updateAttendance()">Update Attendance</a>
    		<a href="#" onclick="generateReport()">Generate Report</a>
@@ -55,4 +58,4 @@
 		include('dashboard.php');
 	?>
 
-<!--- End of Body of Faculty -->
+<!--- End of Body of HOD -->

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>Register</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	
+	<script type="text/javascript" src="../scripts/sha1.js"></script>
+
+	<script type="text/javascript" src="../scripts/script.js"></script>
+	<script type="text/javascript" src="../scripts/register.js"></script>
+	<script type="text/javascript" src="../scripts/user.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+
+<body>
+<center>
+
+<script type="text/javascript">
+	function crypto(){
+		var password = document.getElementById("password").value;
+		if(password!="")
+			password = CryptoJS.SHA1(password);
+		document.getElementById("password").value = password;
+		//Some javascript function below to register
+		//verifyFunction();
+	}
+</script>
+
+<div class="content" id="content">
+<!-- load from here -->
+
+	<div class='verify animated bounce'>
+		<form action='#' method='post'>
+			Register<br><br>
+			<input type='text' id='empId' placeholder='Employee Id' autofocus='autofocus'><br><br>
+			<input type='text' id='fullname' placeholder='Full Name' autofocus='autofocus'><br><br>
+<!--			<input type='text' id='empId' placeholder='Employee Id' autofocus='autofocus'><br><br>
+			<input type='password' id='password' placeholder='Password'><br><br>
+-->
+			<input type='button' value='  Verify  ' onclick='verifyID()'>
+		</form>
+	</div>
+
+<!-- to here -->
+</div>
+
+
+</center>
+<br>
+</body>
+</html>

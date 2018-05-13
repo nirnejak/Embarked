@@ -1,6 +1,4 @@
-##################################################
-				Attendance System
-##################################################
+<h1>Attendance System</h1>
 
 This is a web application designed to help any organization take and maintain attendance of the students
 So, that faculties can take attendace of the students daily and students can check their attendance.
@@ -11,9 +9,7 @@ With features like Dashboard, Notification Panel we want to make it easy for the
 Please Help us improve the application by giving suggestion and commiting to this project. :)
 
 
-------------------------------------------------
-Basic Description
-------------------------------------------------
+<h2>Basic Description</h2>
 
 The applicatio will have 4 types of users.
 1. Administrator
@@ -31,9 +27,8 @@ The applicatio will have 4 types of users.
 4. Students : 
 	This type of user can check his attendance. Students can get some basic information and notices in his Dasboard.
 
-------------------------------------------------
-Technology Stack
-------------------------------------------------
+
+<h2>Technology Stack</h2>
 
 1. HTML, CSS, JavaScript
 2. Animate.css
@@ -48,12 +43,3 @@ We're planning to remove animate.css and add our own code for animating the cont
 
 For the back-end we're using PHP7 and MySQL database.
 We're not using any PHP framework.
-
-
-
-------------------------------------------------
-Features we're planning to add
-------------------------------------------------
-
-Live Dashboard
-Export the Report in Excel(.xls) format

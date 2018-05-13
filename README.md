@@ -11,7 +11,7 @@ Please Help us improve the application by giving suggestion and commiting to thi
 
 <h2>Basic Description</h2>
 
-The applicatio will have 4 types of users.
+The application will have 4 types of users.
 1. Administrator
 2. Faculty
 3. Management
@@ -26,7 +26,6 @@ The applicatio will have 4 types of users.
 	This type of user cannot make any changes in the database. They can check the attendace of the particular class or student. They can also export the date in the Excel format.
 <h3>Students : </h3>
 	This type of user can check his attendance. Students can get some basic information and notices in his Dasboard.
-
 
 <h2>Technology Stack</h2>
 

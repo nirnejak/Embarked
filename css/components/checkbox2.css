@@ -1,0 +1,48 @@
+.checkboxFour {
+	width: 150px;
+	height: 40px;
+	background: #333;		/* Background color of box */
+
+	border-radius: 50px;
+	position: relative;
+}
+
+.checkboxFour:before {
+	content: 'Present';
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	height: 2px;
+	color: #26ca28;
+	font-size: 16px;
+}
+
+.checkboxFour:after {
+	content: 'Absent';
+	position: absolute;
+	top: 12px;
+	left: 77px;
+	height: 2px;
+	color: #cc344d;
+	font-size: 16px;
+}
+
+.checkboxFour label {
+	display: block;
+	width: 60px;
+	height: 22px;
+	border-radius: 50px;
+
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	z-index: 1;
+	left: 12px;
+	background: #cc344d;
+}
+
+.checkboxFour input[type=checkbox]:checked + label {
+	left: 73px;
+	background: #26ca28;
+}

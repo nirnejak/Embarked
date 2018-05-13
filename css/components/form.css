@@ -1,0 +1,99 @@
+/*  */
+.form {
+	max-width: 30%;
+	min-width: 30%;
+	background: #515a7b;
+	text-align: center;
+	color: white;
+
+	margin-top: 5%;
+	padding: 2%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 0.7em;
+}
+
+@media only screen and (max-width: 700px) {
+	.form {
+		max-width: 70%;
+		min-width: 70%;
+	}
+}
+
+.form input[type="text"],.form input[type="number"],.form input[type="password"],.form input[type="search"],.form input[type="date"]{
+	max-width: 100%;
+	min-width: 100%;
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	font-size: 17px;
+	border-radius: 2em;
+
+	border: solid 1px #f1f1f1;
+	padding: 3% 7%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+}
+
+.form input[type="text"]::placeholder,.form input[type="number"]::placeholder,.form input[type="password"]::placeholder,.form input[type="search"]::placeholder,.form input[type="date"]::placeholder{
+	color: #f1f1f1;
+	opacity: 1;
+}
+
+.form input[type="button"],.form input[type="reset"],.form input[type="submit"]{
+	background: #f1f1f1;
+	font-family: 'Roboto', sans-serif;
+	color: #515a7b;
+	font-size: 13px;
+	border-radius: 2em;
+	letter-spacing: 0.5px;
+
+	border: solid 1px #f1f1f1;
+	padding: 4% 7%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.form input[type="button"]:focus, .form input[type="submit"]:focus,.form input[type="reset"]:focus,.form input[type="button"]:hover, form input[type="submit"]:hover,.form input[type="reset"]:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	background: #E4E4E4;
+}
+
+.form select:hover,.form select:focus, .form input[type="text"]:hover,.form input[type="number"]:hover, .form input[type="password"]:hover,.form input[type="date"]:hover,.form input[type="text"]:focus,.form input[type="password"]:focus, input[type="date"]:focus{
+	background: #606B93;
+	border-color: #11a9ac;
+}
+
+.form select{
+	max-width: 100%;
+	min-width: 100%;
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	font-size: 17px;
+	border-radius: 2em;
+
+	border: solid 1px #f1f1f1;
+	padding: 3% 6%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+}
+/*
+.form select{
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	border-radius: 0.5em;
+	font-size: 20px;
+	border-color: #f1f1f1;
+	padding-left: 7px;
+	box-sizing: border-box;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Embarked</title>
+
+	<link rel="icon" type="image/x-icon" href="icos/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/components/form.css">
+	<link rel="stylesheet" type="text/css" href="css/components/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/components/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="css/components/checkbox2.css">
+	<link rel="stylesheet" type="text/css" href="css/components/bubble.css">
+	<link rel="stylesheet" type="text/css" href="css/components/table.css">
+	<link rel="stylesheet" type="text/css" href="css/components/formCards.css">
+	
+	<script type="text/javascript" src="scripts/sha1.js"></script>
+	<script type="text/javascript" src="scripts/login.js"></script>
+	<script type="text/javascript" src="scripts/user.js"></script>
+
+	<script type="text/javascript" src="scripts/user_functions/hod.js"></script>
+	<script type="text/javascript" src="scripts/user_functions/faculty.js"></script>
+	<script type="text/javascript" src="scripts/user_functions/management.js"></script>
+	<script type="text/javascript" src="scripts/user_functions/student.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> -->
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+
+
+</head>
+
+<body onload="checkLogin()">
+<center>
+
+<script type="text/javascript">
+	function crypto(){
+		var password = document.getElementById("password").value;
+		if(password!="")
+			password = CryptoJS.SHA1(password);
+		document.getElementById("password").value = password;
+		loginFunction();
+	}
+</script>
+
+<div class="content animated fadeIn" id="content">
+<!-- load from here -->
+
+	<div class='login animated bounce'>
+		<form action='#' method='post'>
+			<input type='text' id='username' placeholder='Username' autofocus='autofocus'><br><br>
+			<input type='password' id='password' placeholder='Password'><br><br>
+			<input type='reset' value='CLEAR'>&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='button' value='LOGIN' onclick='crypto()'>
+		</form>
+	</div>
+
+<!-- to here -->
+</div>
+
+</center>
+<br><br><br>
+</body>
+</html>

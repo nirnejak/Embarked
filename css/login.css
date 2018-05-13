@@ -1,0 +1,113 @@
+/*  */
+.login {
+	max-width: 30%;
+	min-width: 30%;
+	background: #515a7b;
+	text-align: center;
+	color: white;
+
+	margin-top: 15%;
+	padding: 2%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 0.7em;
+
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.login:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+@media only screen and (max-width: 900px) {
+	.login {
+		max-width: 50%;
+		min-width: 50%;
+
+		margin-top: 30%;
+
+		padding-top: 7%;
+		padding-bottom: 7%;	
+	}
+	.content {
+		max-width: 100%;
+		min-width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+	.login {
+		max-width: 90%;
+		min-width: 90%;
+
+		margin-top: 30%;
+	}
+}
+
+.login input[type="text"],.login input[type="password"],.login input[type="search"]{
+	max-width: 100%;
+	min-width: 70%;
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	font-size: 20px;
+	border-radius: 0.5em;
+
+	border: solid 1.5px #f1f1f1;
+	padding: 5% 9%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+}
+
+.login input[type="text"]::placeholder,.login input[type="password"]::placeholder,.login input[type="search"]::placeholder{
+	color: #f1f1f1;
+	opacity: 0.5;
+}
+
+.login input[type="button"],.login input[type="reset"],.login input[type="submit"]{
+	background: #f1f1f1;
+	font-family: 'Roboto', sans-serif;
+	color: #515a7b;
+	font-size: 15px;
+	border-radius: 0.5em;
+	letter-spacing: 1px;
+
+	border: solid 2px #f1f1f1;
+	padding: 5% 9%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.login input[type="button"]:focus,.login input[type="reset"]:focus,.login input[type="submit"]:focus,.login input[type="text"]:focus,.login input[type="password"]:focus{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.login input[type="text"]:focus,.login input[type="password"]:focus{
+	background: #606B93;
+}
+
+.login input[type="button"]:hover,.login input[type="reset"]:hover,.login input[type="submit"]:hover,.login input[type="text"]:hover,.login input[type="password"]:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.login input[type="text"]:hover,.login input[type="password"]:hover{
+	background: #606B93;
+}
+
+.login select{
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	border-radius: 0.5em;
+	font-size: 20px;
+	border-color: #f1f1f1;
+	padding-left: 7px;
+	box-sizing: border-box;
+}

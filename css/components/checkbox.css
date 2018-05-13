@@ -1,0 +1,68 @@
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.checkboxThree {
+	width: 70%;
+	height: 35px;
+	background: #20243d;		/* Background color of box #333*/
+
+	border-radius: 50px;
+	position: relative;
+	margin-bottom: 3px;
+
+	text-align: left;
+	padding-top: 7px;
+	padding-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+	.checkboxThree {
+		width: 95%;
+
+		text-align: left;
+		font-size: small;
+		padding-top: 5px;
+		padding-left: 10px;
+	}
+}
+
+.checkboxThree:before {
+	content: 'Present';
+	position: absolute;
+	top: 7px;
+	right: 17px;
+	height: 2px;
+	color: #26ca28;
+	font-size: 16px;
+}
+
+.checkboxThree:after {
+	content: 'Absent';
+	position: absolute;
+	top: 7px;
+	right: 83px;
+	height: 2px;
+	color: #cc344d;
+	font-size: 16px;
+}
+
+.checkboxThree label {
+	display: block;
+	width: 60px;
+	height: 25px;
+	border-radius: 50px;
+
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	z-index: 1;
+	right: 15px;
+	background: #cc344d;
+}
+
+.checkboxThree input[type=checkbox]:checked + label {
+	right: 77px;
+	background: #26ca28;
+}

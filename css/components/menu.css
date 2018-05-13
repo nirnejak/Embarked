@@ -1,0 +1,110 @@
+/* //////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////  Menu - Main Menu and Admin Menu ////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////// */
+
+.mainMenu {
+    overflow: hidden;
+}
+
+.mainMenu a:first-child{
+    background: #11a9ac;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+}
+
+.mainMenu .icon {
+    display: none;
+}
+
+.adminMenu {
+    overflow: hidden;
+}
+
+.adminMenu .icon {
+    display: none;
+}
+
+.adminMenu a:first-child{
+    background: #11a9ac;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+}
+
+@media screen and (max-width: 700px) {
+    .mainMenu a:not(:first-child) {
+        display: none;
+    }
+    .mainMenu a.icon {
+        float: right;
+        padding-right: 20px;
+        display: block;
+        background: #11a9ac;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .mainMenu{
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mainMenu.responsive {
+        position: relative;
+    }
+
+    .mainMenu.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .mainMenu.responsive a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .adminMenu a:not(:first-child) {
+        display: none;
+    }
+    .adminMenu a.icon {
+        float: right;
+        padding-right: 20px;
+        display: block;
+        background: #cc344d;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .adminMenu a{
+        background: #e54d66;
+    }
+    .adminMenu a:hover{
+        background: #cc344d;
+    }
+    .adminMenu{
+        position: relative;
+        background: #cc344d;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .adminMenu.responsive {
+        position: relative;
+        background: #11a9ac;
+    }
+
+    .adminMenu.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .adminMenu.responsive a {
+        display: block;
+    }
+
+    .adminMenu a:first-child{
+        background: #cc344d;
+    }
+}
+/* //////////////////////////////////////////////////////////////////////////// */

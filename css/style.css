@@ -1,0 +1,496 @@
+* {
+
+	box-sizing: border-box;
+
+}
+
+
+
+body {
+
+	margin: 0px;
+
+	background: #20243d;
+
+	font-family: 'Roboto', sans-serif;
+
+	/*font-family: 'Varela Round', sans-serif;*/
+
+}
+
+
+
+.content {
+
+	max-width: 90%;
+
+	min-width: 90%;
+
+	margin-top: 5%;
+
+	padding: 0px;
+
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+/* //////////////////  Display Page - Part to display form  /////////////////// */
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+.display_page {
+
+	background: #515a7b;
+
+	color: #f1f1f1;
+
+    float:left; 
+
+    max-width: 72.5%;
+
+    min-width: 72.5%;
+
+    margin-left: 2%;
+
+    margin-top:1.65%;
+
+	margin-bottom:5%;
+
+    border-radius: 0.4em; 
+
+    box-sizing: border-box;
+
+
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+
+
+.display_page:hover {
+
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+
+
+.display_page .heading {
+
+	display: block;
+
+	line-height: 50px;
+
+	color: white;
+
+	text-decoration: none;
+
+	border-top-left-radius: 0.4em;
+
+	border-top-right-radius: 0.4em;
+
+	background: #11a9ac;
+
+}
+
+
+
+.display_page .settings-heading {
+
+	background: #33b5e6;
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+	.display_page {
+
+		max-width: 90%;
+
+		min-width: 90%;
+
+		margin: 5%;
+
+	}
+
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+/* /////////  Header - Header Contains Navigation Menu and User Info  ///////// */
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+.header {
+
+	height: 70px;
+
+	border-radius: 0.3em;
+
+	background: #515a7b;
+
+	text-align: center;
+
+	color: white;
+
+	margin:0.5%;
+
+	clear: both;
+
+	/*box-shadow: 0px 0px 5px black;*/
+
+	min-width: 100%;
+
+	max-width: 100%;
+
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+
+
+.header:hover {
+
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+
+
+
+
+/* Displays Info about User */
+
+.user {
+
+	text-align: right;
+
+	line-height: 70px;
+
+	display: block;
+
+	min-width: 50%;
+
+	max-width: 50%;
+
+	color: #f1f1f1;
+
+	float: left;
+
+	padding-right: 3%
+
+}
+
+/* A Division Contains more divisions with hyperlinks*/
+
+.navigation {
+
+	text-align: center;
+
+	max-width: 50%;
+
+	min-width: 50%;
+
+	float: left;
+
+	clear: both;
+
+}
+
+
+
+/* Divisions containing Single Hyperlinks */
+
+.nav {
+
+	float: left;
+
+	text-align: center;
+
+	padding: 0px;
+
+	margin: 0px;
+
+	max-width: 23%;
+
+	min-width: 23%;
+
+}
+
+
+
+.nav a{
+
+	display: block;
+
+	line-height: 60px;
+
+	color: white;
+
+	text-decoration: none;
+
+	text-align: center;
+
+	box-sizing: border-box;
+
+	border-bottom: 5px #515a7b solid;
+
+	border-top: 5px #515a7b solid;
+
+}
+
+
+
+.nav a:hover{
+
+	/* text-decoration: underline; */
+
+	border-bottom: 5px #11a9ac solid;
+
+	transition: border-bottom-color 0.5s;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+	.header {
+
+		min-width: 90%;
+
+		max-width: 90%;
+
+	}
+
+	.navigation {
+
+		text-align: center;
+
+		max-width: 100%;
+
+		min-width: 100%;
+
+		float: left;
+
+		clear: both;
+
+	}
+
+		.nav {
+
+			float: left;
+
+			text-align: center;
+
+			max-width: 48%;
+
+			min-width: 48%;
+
+		}
+
+	.user {
+
+		min-width: 100%;
+
+		max-width: 100%;
+
+		float: left;
+
+		clear:both;
+
+		text-align: center;
+
+		background: #515a7b;
+
+		border-radius: 0.3em;
+
+		line-height: 40px;
+
+		margin-top: 19px;
+
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+	}
+
+/*	.header:hover {
+
+	    box-shadow: 0px 0px 0px 0px;
+
+	}
+
+	.user:hover {
+
+	    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+	    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+	}
+
+	.navigation:hover {
+
+	    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+	    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+	}*/
+
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+/* ///////  Cards - Header Contains Navigation Menu and User Info and  //////// */
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Card Container - Contains  Multiple cards aligned Vertically */
+
+.card_container {
+
+	float:left;
+
+	max-width: 23%;
+
+	min-width: 23%;
+
+	margin: 0.5% 0.5% 0.5% 0.5%;
+
+	box-sizing: border-box;
+
+}
+
+
+
+/* Cards - Contains Information, Quick Links */
+
+.page_card {
+
+	max-width: 100%;
+
+	min-width: 100%;
+
+	float: top;
+
+	background: #515a7b;
+
+	border-radius: 0.4em;
+
+	margin:5%;
+
+	/*box-shadow: 0px 0px 5px black;*/
+
+	box-sizing: border-box;
+
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+
+
+.page_card:hover {
+
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+	transform: scale(1.02);
+
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+/* ///////  Cards - Header Contains Navigation Menu and User Info and  //////// */
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+
+
+.page_card a:first-child{
+
+	background: #11a9ac;
+
+	border-top-left-radius: 0.4em;
+
+	border-top-right-radius: 0.4em;
+
+}
+
+
+
+.page_card a:last-child{
+
+	border-bottom-left-radius: 0.4em;
+
+	border-bottom-right-radius: 0.4em;
+
+}
+
+.page_card a{
+
+	display: block;
+
+	line-height: 50px;
+
+	color: white;
+
+	text-decoration: none;
+
+}
+
+
+
+.page_card a:hover{
+
+	background: #606B93;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+	.card_container {
+
+		max-width: 90%;
+
+		min-width: 90%;
+
+		margin: 0% 0.5% 0% 0.5%;
+
+	}
+
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////// */

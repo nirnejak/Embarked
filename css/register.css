@@ -1,0 +1,82 @@
+/*  */
+.form {
+	max-width: 40%;
+	min-width: 40%;
+	background: #515a7b;
+	text-align: center;
+	color: white;
+
+	margin-top: 5%;
+	padding: 2%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 0.7em;
+
+	box-shadow: 0px 0px 5px black;
+}
+
+@media only screen and (max-width: 700px) {
+	.form{
+		max-width: 100%;
+		min-width: 100%;
+	}
+}
+
+.form select,.form input[type="text"],.form input[type="password"],.form input[type="search"],.form input[type="date"]{
+	max-width: 82%;
+	min-width: 82%;
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	font-size: 17px;
+	border-radius: 2em;
+
+	border: solid 1px #f1f1f1;
+	padding: 2.5% 5%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+}
+
+.form input[type="text"]::placeholder,.form input[type="password"]::placeholder,.form input[type="search"]::placeholder{
+	color: #f1f1f1;
+	opacity: 0.5;
+}
+
+.form input[type="button"],.form input[type="reset"],.form input[type="submit"]{
+	background: #f1f1f1;
+	font-family: 'Roboto', sans-serif;
+	color: #515a7b;
+	font-size: 13px;
+	border-radius: 2em;
+
+	border: solid 1px #f1f1f1;
+	padding: 3% 5%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.form input[type="button"]:focus,.form input[type="reset"]:focus,.form input[type="button"]:hover,.form input[type="reset"]:hover{
+	box-shadow: 0px 0px 5px black;
+	background: #E4E4E4;
+}
+
+.form input[type="text"]:hover,.form input[type="password"]:hover,.form input[type="date"]:hover,.form input[type="text"]:focus,.form input[type="password"]:focus,.form input[type="date"]:focus{
+	background: #606B93;
+	border-color: #11a9ac;
+}
+/*
+.form select{
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	border-radius: 0.5em;
+	font-size: 20px;
+	border-color: #f1f1f1;
+	padding-left: 7px;
+	box-sizing: border-box;
+}

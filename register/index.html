@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Embarked - Register</title>
+
+	<link rel="icon" type="image/x-icon" href="icos/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+</head>
+
+<body>
+<center>
+
+<div class="content" id="content">
+<!-- load from here -->
+	<script type="text/javascript">
+			function verify(){
+				var empId=document.getElementById('EmployeeID').value;
+				empId=empId.toUpperCase();
+                var FName=document.getElementById('FName').value;
+                var LName=document.getElementById('LName').value;
+                var userName=document.getElementById('userName').value;
+                var password=document.getElementById('password').value;
+                var ReType=document.getElementById('ReType').value;
+                var abbr=document.getElementById('abbr').value;
+                var userType=document.getElementById('userType').value;
+                var contactNo=document.getElementById('contactNo').value;
+                var email=document.getElementById('email').value;
+                var dept=document.getElementById('dept').value;
+                var field=document.getElementById('field').value;
+
+				if(password==ReType){
+					if (empId!="" &&	FName!="" &&	LName!="" &&	userName!="" && abbr!="" &&	userType!="" &&	contactNo!="" &&	email!="" &&	dept!="" && field!="" && password!=""){
+						var i=new XMLHttpRequest();
+						i.onreadystatechange = function(){
+							if(this.readyState == 4 && this.status == 200){
+								document.getElementById("content").innerHTML += this.responseText;
+							}
+						};
+						i.open("POST","register.php?employee_id="+empId+"&username="+userName+"&password="+password+"&first_name="+FName+"&last_name="+LName+"&phone_no="+contactNo+"&department="+dept+"&email="+email+"&abbriviation="+abbr+"&field_of_teaching="+field+"&user_type="+userType, true);
+						i.send();
+					}
+					else{
+						document.getElementById("form").innerHTML+="All Fields are Mandatory";
+					}
+				}
+				else{
+					document.getElementById("form").innerHTML+="Passwords do not match";
+				}
+		}
+	</script>
+	<div class='form animated bounce'>
+		
+		<form action='#' method='post'>
+			<span class="heading" style="display: block; background: #515a7b;">Create Your Account</span><br><br>
+			<input type='text' placeholder='Employee ID' id="EmployeeID" autofocus='autofocus's>
+			<br><br>
+			<input type='text' placeholder='First Name' id="FName" style="min-width:40%; max-width:40%;">
+			<input type='text' placeholder='Last Name' id="LName" style="min-width:40%; max-width:40%;margin-left: 5px;">
+			<br><br>
+			<input type='text' placeholder='Username' id="userName" style="min-width:40%; max-width:40%;">
+			<input type='text' placeholder='Abbriviation' id="abbr" style="min-width:40%; max-width:40%;margin-left: 5px;">
+			<br><br>
+			<input type='password' placeholder='Password' id="password" style="min-width:40%; max-width:40%;">
+			<input type='password' placeholder='Re-type Password' id="ReType" style="min-width:40%; max-width:40%;margin-left: 5px;">
+			<br><br>
+			<input type='text' placeholder='User Type eg. faculty' id="userType" style="min-width:40%; max-width:40%;">
+			<input type='text' placeholder='Contact No' id="contactNo" style="min-width:40%; max-width:40%;margin-left: 5px;">
+			<br><br>
+			<input type='text' placeholder='Email' id="email">
+			<br><br>
+			<input type='text' placeholder='Department' id="dept" style="min-width:40%; max-width:40%;">
+			<input type='text' placeholder='Course' id="field" style="min-width:40%; max-width:40%;margin-left: 5px;">
+			<br><br>
+			<input type='button' value='  REGISTER  ' onclick="verify()"><br><br>
+		</form>
+	</div>
+
+	
+
+<!-- to here -->
+</div>
+
+
+</center>
+<br>
+</body>
+</html>
+
+

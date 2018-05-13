@@ -1,0 +1,33 @@
+#recordDisplay {
+	border: 1px #f1f1f1 solid;
+	border-radius: 1em;
+}
+
+#recordDisplay td{
+	border: 1px #f1f1f1 solid;
+	padding: 3px;
+	text-align: center;
+}
+
+#recordDisplay th{
+	border: 1px #f1f1f1 solid;
+}
+
+#feed {
+	border: 1px #f1f1f1 solid;
+	border-radius: 1em;
+	min-width: 70%;
+	max-width: 70%;
+}
+
+#feed td{
+	/*border: 1px #f1f1f1 solid;*/
+	border-bottom: 1px #f1f1f1 solid;
+	padding: 3px;
+	text-align: center;
+}
+
+#feed th{
+	/*border: 1px #f1f1f1 solid;*/
+	border-bottom: 1px #f1f1f1 solid;
+}

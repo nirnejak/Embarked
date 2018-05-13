@@ -1,0 +1,145 @@
+/*  */
+.setup {
+	max-width: 80%;
+	min-width: 80%;
+	background: #515a7b;
+	text-align: center;
+	color: #f1f1f1;
+
+	margin-top: 5%;
+	padding-top: 3%;
+
+	
+	border-top-left-radius: 0.7em;
+	border-top-right-radius: 0.7em;
+}
+
+.form_container {
+	max-width: 100%;
+	min-width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+.component_container{
+	float: left;
+	min-width: 40%;
+	max-width: 40%;
+}
+
+.component_container_small{
+	float: left; 
+	min-width: 20%; 
+	max-width: 20%;
+}
+
+.progress {
+	background: #606B93;
+	border-radius: 0.7em;
+	min-width: 80%;
+	max-width: 80%;
+	color: #f1f1f1;
+	clear: both;
+}
+
+.steps{
+	margin-bottom: 5%;
+	min-width: 20%;
+	max-width: 20%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+	background: #515a7b;
+	border-top: 3px #515a7b solid;
+}
+
+@media only screen and (max-width: 700px) {
+	.setup {
+		max-width: 90%;
+		min-width: 90%;
+
+		margin-top: 30%;
+
+		padding-top: 7%;
+		padding-bottom: 7%;	
+	}
+	.content {
+		max-width: 100%;
+		min-width: 100%;
+	}
+	.progress {
+		min-width: 90%;
+		max-width: 90%;
+	}
+	.component_container{
+		float: none;
+	}
+	.component_container_small{
+		float: none;
+	}
+	.form_container{
+		text-align: center;
+	}
+}
+
+.setup input[type="text"], .setup input[type="password"], .setup input[type="search"], .setup input[type="number"], .setup select{
+	max-width: 90%;
+	min-width: 90%;
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	font-size: 17px;
+	border-radius: 2em;
+
+	border: solid 1px #f1f1f1;
+	padding: 3% 6%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+}
+
+.setup input[type="text"]::placeholder, .setup input[type="password"]::placeholder, .setup input[type="search"]::placeholder, .setup input[type="number"]::placeholder{
+	color: #f1f1f1;
+	opacity: 0.5;
+}
+
+.setup input[type="button"], .setup input[type="reset"], .setup input[type="submit"]{
+	background: #f1f1f1;
+	font-family: 'Roboto', sans-serif;
+	color: #515a7b;
+	font-size: 14px;
+	letter-spacing: 1px;
+	border-radius: 2em;
+
+	border: solid 1px #f1f1f1;
+	padding: 7% 9%;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.setup input[type="button"]:focus, .setup input[type="reset"]:focus, .setup input[type="button"]:hover, .setup input[type="reset"]:hover{
+	box-shadow: 0px 0px 5px black;
+	background: #E4E4E4;
+}
+
+.setup input[type="text"]:hover, .setup input[type="password"]:hover, .setup input[type="date"]:hover, .setup input[type="number"]:hover, .setup input[type="text"]:focus, .setup input[type="password"]:focus, .setup input[type="date"]:focus, .setup input[type="number"]:focus, .setup select:focus, .setup select:hover{
+	background: #606B93;
+	border-color: #11a9ac;
+}
+/*
+.setup select{
+	background: transparent;
+	font-family: 'Roboto', sans-serif;
+	color: #f1f1f1;
+	border-radius: 0.5em;
+	font-size: 20px;
+	border-color: #f1f1f1;
+	padding-left: 7px;
+	box-sizing: border-box;
+}
+*/

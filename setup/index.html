@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Embarked - Application Setup</title>
+
+	<link rel="icon" type="image/x-icon" href="icos/favicon.png">
+	
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/setup.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<script type="text/javascript" src="../scripts/setup.js"></script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+
+
+</head>
+
+<body>
+<center>
+
+<div class="content" id="content">
+<!-- load from here -->
+
+	<div class='setup animated bounce' id="setup">
+		<center>
+			<div class="form_container" id="form_container">
+				<form action='#' method='post' id="form">
+					<span class="heading" style="display: block; background: #515a7b;">Enter College Details</span><br><br>
+					<div class="component_container">
+						<input type='text' id='collegeName' placeholder='College Name' autofocus='autofocus'>
+					</div>
+					<div class="component_container">
+						<input type='text' id='collegeAbbreviation' placeholder='College Abbreviation eg. RCET'>
+					</div>
+					<div class="component_container_small">
+						<input type='button' value='   ADD   ' onclick='addCollegeDetails()'>
+					</div>
+				</form>
+			</div>
+			<br><br><br><br>
+			<div id="form_message" style="color: #f1f1f1;">
+				<!-- Messages will be displayed here -->
+			</div>
+
+			<input type='button' value=' NEXT ' id="nextButton" onclick='showCourseDetails()' style="padding: 1.5% 4%;" style="float: none;">
+			<br><br><br>
+		</center>
+	</div>
+	<div class="progress" style="clear:both;">
+				<div class="steps" id="step1" style="border-bottom-left-radius:0.7em; border-top: 3px #11a9ac solid;background: #606B93;">College Details</div>
+				<div class="steps" id="step2">Course Details</div>
+				<div class="steps" id="step3">Branch Details</div>
+				<div class="steps" id="step4">Subject Details</div>
+				<div class="steps" id="step5" style="border-bottom-right-radius:0.7em;">Employee Record</div>
+	</div>
+
+<!-- to here -->
+</div>
+
+
+</center>
+<br>
+</body>
+</html>

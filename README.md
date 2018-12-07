@@ -27,7 +27,7 @@ The application will have 4 types of users.
 <h3>Students : </h3>
 	This type of user can check his attendance. Students can get some basic information and notices in his Dasboard.
 
-<h2>Technology Stack</h2>
+<h2>Technology Used</h2>
 
 1. HTML, CSS, JavaScript
 2. Animate.css

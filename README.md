@@ -1,4 +1,4 @@
-#Attendance System
+# Attendance System
 
 This is a web application designed to help any organization take and maintain attendance of the students
 So, that faculties can take attendace of the students daily and students can check their attendance.
@@ -13,7 +13,7 @@ Username: demo
 Password: demo1234
 ```
 
-##Basic Description
+## Basic Description
 
 The application will have 4 types of users.
 - Administrator
@@ -22,19 +22,19 @@ The application will have 4 types of users.
 - Students
 
 
-###Administrator
+### Administrator
 The administrator can add new users. He can create a new batch and add new students to it. He can generate a report of the attendance and he can Export the data in Excel(.xls) format.
 
-###Faculty
+### Faculty
 This type of user can feed attendace in the system. They can check the attendace of the particular class or student. They can also export the date in the Excel format.
 
-###Management
+### Management
 This type of user cannot make any changes in the database. They can check the attendace of the particular class or student. They can also export the date in the Excel format.
 
-###Students
+### Students
 This type of user can check his attendance. Students can get some basic information and notices in his Dasboard.
 
-##Technology Used
+## Technology Used
 
 - HTML, CSS, JavaScript
 - Animate.css

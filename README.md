@@ -1,4 +1,4 @@
-# Attendance System
+# Embarked - Attendance System Application
 
 This is a web application designed to help any organization take and maintain attendance of the students
 So, that faculties can take attendace of the students daily and students can check their attendance.
